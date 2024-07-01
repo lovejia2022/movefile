@@ -1,0 +1,6 @@
+movefile: Can't move file with {count} path.
+
+Use "movefile SRC DST" to move SRC to DST.
+
+Use "movefile (-i|--into) SRC [SRC]... DST" to move a list of file into DST.
+DST must be a directory here.
