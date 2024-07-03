@@ -1,21 +1,30 @@
-# movefile - move (rename) files
+MOVEFILE(1)
 
-Move a item to another place.
+# NAME
 
-```sh
-movefile SRC DST
+```
+movefile - move (rename) files
 ```
 
-Copy a list of item to directory.
+# SYNOPSIS
 
-```sh
-movefile (-i|--into) SRC... DST
+```
+movefile [OPTIONS] SRC DST
+movefile [OPTIONS] -i|--into SRC... DST
 ```
 
-Copy a item to another place.
+# OPTIONS
 
-```sh
-movefile --copy SRC DST
-```
+- -c,--copy      Copy instead of move.
+- -o,--override  Override target file if target file is exits.
+- -m,--merge     Merge source directory into target directory.
 
-Copy a list of item into directory.
+# RETURN CODE
+
+- 1     Usage error.
+- 2     Target exists.
+- 100   Internal error.
+
+# Links
+
+- Source: https://github.com/lovejia2022/movefile
